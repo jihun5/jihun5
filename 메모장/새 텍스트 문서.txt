@@ -1,0 +1,155 @@
+urls 목록
+
+from django.urls import path
+from . import views_test, views
+
+urlpatterns = [   
+   # path('', views_test.test_html_multi_data),
+   # path('test_json', views_test.test_json_data),
+   # path('parameter_data', views_test.test_html_parameter_data),
+   # path('parameter_data2/<int:my_id>', views_test.test_html_parameter_data2),
+   # path('test_post', views_test.test_post_form),
+   # path('test_post_handle', views_test.test_post_handle),
+   # path('test_select_one/<int:my_id>', views_test.test_select_one),
+   # path('test_select_all', views_test.test_select_all),
+   # path('test_select_filter', views_test.test_select_filter),
+   # path('test_update', views_test.test_update),
+
+   path('', views.home), 
+   path('authors/', views.author_list),
+   path('authors/new', views.author_new),
+   path('authors/<int:my_id>', views.author_detail),
+   path('authors/<int:my_id>/update', views.author_update),
+   path('posts/', views.post_list),
+   
+   # path()
+]
+author.detail.html
+
+{% extends 'home.html' %}
+
+{% block content%}
+
+<h1>회원상세조회</h1>
+
+<p>이름 : {{authors.name}} </p>
+<p>email : {{authors.email}} </p>
+<p>password : {{authors.password}} </p>
+<span>가입일 : {{authors.created_at}} </span>&nbsp;&nbsp;&nbsp;
+<span>회원정보수정일 : {{authors.updated_at}}</span>
+<div>
+    <a href="/authors/{{authors.id}}/update">회원수정</a>
+</div>
+{% endblock %}
+
+author_list.html
+
+{% extends 'home.html' %}
+
+{% block content%}
+
+<h1>회원목록</h1>
+<a href="/authors/new">회원가입</a> 
+<table>
+    <thead>
+        <tr>
+            <th>이름</th>
+            <th>email</th>
+            <th>가입일</th>
+        </tr>   
+    </thead>
+
+    <tbody>
+        {% for author in authors %} 
+        <tr>
+            <td><a href="/authors/{{author.id}}">{{author.name}}</a></td>
+            <td>{{author.email}}</td>
+            <td>{{author.created_at}}</td>
+        </tr>   
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+{% endblock %}
+
+models.py
+class Author(models.Model):
+    name = models.CharField(max_length=20)
+    email = models.CharField(max_length=50)
+    password = models.CharField(max_length=30)
+    # DB설정에 default timestamp가 걸리는 것이 아닌, 
+    # 장고가 현재 시간을 db에 insert
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    contents = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    # DB에는 fk를 설정한 변수명에 _id가 붙게 된다
+    # on_update = models.CASCADE, on_delete = models.CASCADE 
+    # 옵션을 줄 수 있다. Author 옆에 
+    author = models.ForeignKey(Author, on_delete = models.SET_NULL, null=True) 
+
+
+
+viesw.py
+from django.shortcuts import render, redirect
+from .models import Author, Post
+
+
+def home(request):
+    return render(request, 'home.html')
+
+
+def author_list(request):
+    authors = Author.objects.all()
+    return render(request, 'author/author_list.html', {'authors':authors})
+
+
+def author_detail(request, my_id):
+    authors = Author.objects.get(id=my_id)
+    return render(request, 'author/author_detail.html', {'authors':authors})
+
+
+def author_update(request, my_id):
+    authors = Author.objects.get(id=my_id)
+    if request.method == 'POST':
+        my_name = request.POST['my_name']
+        my_email = request.POST['my_email']
+        my_password = request.POST['my_password']
+        authors.name = my_name
+        authors.email = my_email
+        authors.password = my_password
+        authors.save()
+        return redirect('/') 
+    else:
+        return render(request, "author/author_update.html", {'authors' : authors})
+
+
+def post_list(request):
+    return render(request, 'post/post_list.html')  
+
+
+def author_new(request):
+    if request.method == 'POST':
+        my_name = request.POST['my_name']
+        my_email = request.POST['my_email']
+        my_password = request.POST['my_password']
+            # DB에 INSERT -> SAVE함수
+            # DB에 테이블과 SYNC가 맞는 test 클래스에서 객체를 만들어 save
+        a1 = Author()
+        a1.name = my_name
+        a1.email = my_email
+        a1.password = my_password
+        a1.save()
+        return redirect('/') # localhost:8000/
+    # return HttpResponse("ok")
+    else:
+        return render(request, "author/author_new.html") 

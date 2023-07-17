@@ -1,0 +1,108 @@
+오늘의 문제
+짝수는 싫어요(https://school.programmers.co.kr/learn/courses/30/lessons/120813)
+중복된 문자 제거(https://school.programmers.co.kr/learn/courses/30/lessons/120888)
+가장 큰 수 찾기(https://school.programmers.co.kr/learn/courses/30/lessons/120899)
+약수구하기(https://school.programmers.co.kr/learn/courses/30/lessons/120897)
+n의 배수 고르기(https://school.programmers.co.kr/learn/courses/30/lessons/120905)
+배열의 유사도(https://school.programmers.co.kr/learn/courses/30/lessons/120903)
+피자나눠먹기(3)(https://school.programmers.co.kr/learn/courses/30/lessons/120816)
+자릿수 더하기(https://school.programmers.co.kr/learn/courses/30/lessons/120906)
+제곱수 판별하기(https://school.programmers.co.kr/learn/courses/30/lessons/120909)
+중앙값 구하기(https://school.programmers.co.kr/learn/courses/30/lessons/120811)
+n = 10
+# result = [1, 3, 5, 7, 9]
+answer = []
+num = []
+for a in range(1,n):
+    if a%2 != 0:
+        answer.append(a)
+print(answer)
+
+my_string = "people"
+def solution(my_string):
+    answer = ''
+    for i in my_string: # i = people
+        if i not in answer: # p, e, o, p, l, e가 없으면
+            answer+=i # answer에다가 i값을 추가한다.
+                    # 처음에 p가없네?하고 p를 추가하고
+                    # 다음에 e,o같은 형식으로 추가하다가 다시 p가오면 있으니까 추가하지 않는다
+    return answer
+
+array = [1,8,3]
+answer = [max(array), array.index(max(array))]
+print(answer)
+# max(array) = 최대값 , array.index(max(array)) = 최대값
+# array.index(최대값) -> array.index(8)
+# answer = 8,1
+
+n = 29 #약수구할때는 n% = 0
+# result = [1, 2, 3, 4, 6, 8, 12, 24]
+answer = []
+for i in range(1, n+1):
+    if n%i == 0:
+        answer.append(i)
+print(answer)
+
+'''
+정수 n과 정수배열 numlist가 매개변수로 주어질때 
+n의 배수가 아닌 수들을 제거한 배열을 구하라
+'''
+n = 3
+numlist = [4, 5, 6, 7, 8, 9, 10, 11, 12]
+# 1번 3의 배수만 담으면 되잖아
+answer = []
+for i in numlist:
+    if i%3 == 0:
+        answer.append(i)
+print(answer)
+
+배열의 유사성
+s1 s2가 얼마나 유사한지
+같은 원소의 개수를 구하라
+'''
+s1 = ["a", "b", "c"]
+s2 = ["com", "b", "d", "p", "c"]
+answer = 0 # 초기값
+for i in s1: # i = a b c
+    if i in s2: #a가 s2에 있으면 +1인데, 없으니 0, b는 있으니까 +1, c도있으니까 +2
+        answer += 1
+print(answer)
+
+slice = 7 #7조각으로 자르겠다.
+n = 10 # 사람의 숫자
+# slice 횟수로 자른 후  n명의 사람이 적어도 한조각 이상씩 먹으려면
+# 몇 판을 시켜야 하는가?
+# for a in range(1, n):
+if n%slice != 0:
+    answer = n//slice +1
+elif n%slice == 0:
+    answer = n//slice
+print(answer)
+
+n = 1234
+# lista = list(str(n))
+# print(lista) # ['1','2','3','4']
+# num = []
+# answer = []
+answer = 0
+for i in str(n):
+    answer += int(i)
+print(answer)
+
+answer = 0
+import math
+if math.sqrt(n) == int(math.sqrt(n)): #12.0 =12 같다는걸 이용
+                                      #31.33333 != 31
+    answer = 1
+else:
+    answer = 2
+num = math.sqrt(n)
+num1 = int(math.sqrt(n))
+print(num)
+print(num1)
+
+def solution(array):
+    array.sort()
+    a = len(array)//2
+    answer = array[a]
+    return answer

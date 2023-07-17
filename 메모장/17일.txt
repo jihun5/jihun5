@@ -1,0 +1,112 @@
+python manage.py runserver
+
+템블릿 + html
+Request URL : http://localhost:8000/
+Request Method: GET(겟방식, 포스트방식도 있음)
+get 요청은 화면을 달라고 서버에게 요청하는것
+post는 어떤 자원을 등록하기 위해 사용자가 서버에게 전송하는 것
+Status Code : 200(http 상태코드) OK
+(404 not found, 500 internal server error)
+200번대 상태코드는 정상임을 사용자에게 알려주는 것
+200~500번대까지 일반적으로 사용
+400번대는 사용자가 요청을 잘 못했음을 알려주는 상태코드
+500번대는 서버의 잘못임을 알려주는 상태코드
+300번대는 화면 redirect 코드(A화면 -> B화면으로 넘어가라고 서버에서)
+(ex) 주문완료 후 다른 페이지로 넘어가게끔)
+(일반적으로 프론트엔드와 서버가 구분됐을 때 상태 코드가 중요하게 사용)
+(프론트앤드 서버가 따로 있는경우 사용자 요청 시 프론트앤드 서버 먼처 출력)
+(데이터 요청 후 백앤드 서버화면을 get)
+->에러화면을 code에 맞게 선택
+->400번대 다시 url을 검색해달라
+->500번대 서버 자체의 문제
+-> 프론트엔드 (javascript)
+if 400번대면 -> a에러 화면을 보여준다
+if 500번대면 -> b에러 화면을 보여준다
+
+사용자와 서버간에는 request(요청) response(응답)을 주고 받는다.
+요청과 응답은 정해진 프로토콜(약속)에 맞게 통신이 이루어져야 하고, 
+이 프로토콜을 http 프로토콜이라고 한다. 
+요청/응답 각각 header와 body로 이루어져있다. 
+즉, request header, request body, response header, response body 
+
+header 에는 url 포트 등 주요 요약정보가 담겨있고, body에는 본문 내용이 담겨있다.
+
+get요청은 header에 요청하고자 하는 정보를 넣어 요청하는 방식인데, header는 확인이
+가능하다. post요청은 body에 data를 넣어 요청하는 방식이라 보안이 강화됐다.
+
+1. 템플릿엔진(백ㅂ엔드에서 화면까지) ->옛날방식
+2. rest api 방식(프론트/백엔드 구분) -> 현대적인 프로그래밍(ex) json return)
+
+postman 다운로드 
+localhost:8000/parameter_data?id=1&name=hongildong
+localhost:8000/parameter_data?name=hong&email=hong@naver.com&password=1234
+http://localhost:8000/parameter_data2/10
+
+test/test_post_form.html 만들고
+form 태그로 name, email, password
+def test_post_form(): 에서 return test/test_post_form.html + url 매핑(test_post)
+
+요청 -> 응답
+get 요청 -> 화면응답(html + 상태코드)
+post 요청 -> 화면을 줄게 없다. -> 상태코드를 응답
+postman을 가지고 post요청을 할 때는 csrf_token이 문제가 된다. 
+settings.py에서 middleware에 csrf관련 설정 주석처리
+템플릿엔진(html 장고안에서)
+localhost:8000/test_post_handle (회원가입 시에 다른페이지로 넘어가는 거)
+(http://www.gsbd.kr/bbs/board.php?bo_table=homepage02&wr_id=1)
+(https://blog.naver.com/PostView.naver?blogId=rn8958&logNo=222488418220)
+
+DB연동
+1) settings.py에 DB정보(미리 스키마는 생성해야 함 - 자동 생성 x)
+# Database
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# 전체프로젝트의 database정보를 아래에서 설정. 
+# db의 종류, host, port, mysql의 계정/pw, 스키마명(name)
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'board',
+        'UESR': 'root',
+        'PASSWORD' : '1234',
+        'HOST' : '127.0.0.1',
+        'PORT' : '3406', 
+2)테이블은 자동생성 0 -> 파이썬의 클래스를 통해서 
+->파이썬의 객체와 DB의 테이블의 SYNC를 맞추고, 별도의 RAW QUERY없이 DB
+를 컨트롤하는것을 ORM이라고 한다.
+2-1) pip install mysqlclient
+3) 데이터베이스 마이그레이션()
+3-1) python manage.py makemigrations
+3-2) python manage.py migrate
+( DDL문 생성 후 반영)
+
+python .\manage.py makemigrations(실제로 적용하기 전 DB와 맞추는)
+-> 많이 만들고 지워도 상관은없으나 오류를 추적하기 위해 사용하는 경우
+python manage.py migrate(실제로 적용)
+migrate는 신중히
+
+localhost:8000/test_post_handle (회원가입 시에 다른페이지로 넘어가는 거)
+localhost:8000/test_select_one/1 (회원가입 후 정보페이지)
+객체형식을 찍을 때에는 
+ex)  tests = Test.objects.all()
+    # for a in tests:
+    #     print(a.name) a.name 이런 형식으로 가져와야 한다.
+localhost:8000/test_select_all
+
+localhost:8000/authors
+localhost:8000/authors/1
+localhost:8000/authors/1/edit/
+localhost:8000/posts
+localhost:8000/post/<int:my_id>
+
+회사 오류들은 무조건 받아보기
+a.name = 하는 이유는 author아래에 name을 검색하는 일인데
+inner join, left join의 경우 author항목아래를 가져오는 것이 아니라
+author를 join을 해서 id contents name passowd author(id, title, eamil)을 붙이는 거기때문에
+author.id(author 객체에서 id를 가져오겠다) 
+(author_id는 PK이지만 Post id는 author id사람이 2개 3개의 글을 작성할 수 있기때문에)
+(post id 1, post id 1, post id 2, 같은 작성자가 다른 글을 쓸 수 있다는 것을 의미)  
+
+CRUD : 생성, 조회, 수정, 삭제
+
+회원상세조회에서 글을 몇번 썼는지 어떤 글을 썼는 지 내일 만들기
+

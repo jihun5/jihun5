@@ -1,0 +1,57 @@
+----------------------------
+# jupyter 설치
+1. 명령프롬프트 실행
+
+2.jupyter 설치
+
+pip install --upgrade jupyter
+
+3. jupyter 실행
+
+작업폴더 위치에서 명령프롬포트(터미널) 실행 후..
+
+win) python -m jupyter
+
+shift enter = 현재 블록 실행 후 다음 블록이동(새 블록 생성)
+ctrl + enter = 현재 블록 실행 후 머물러 있기
+
+실행모드
+
+1. 이동모드 : 방향키로 블록이동이 가능, enter 눌러서 편집모드로 전환가능ㄴ
+2. 편집모드 : 코딩이 가능한 상태, esc를 눌러서 이동모드로 전환가능
+
+코드 작성시 유의사항
+(코드)블록의 순서는 중요하지 않음, 실행순서가 중요
+(왼쪽 대괄호에 숫자가 없으면 실행이 된적이 없음)
+한번 실행한 코드는 지워도 기억하고 있다(restart를 눌러야 초기화)
+
+markdown(책 집필 시 html의 요약본)
+블럭에 esc누른 후 m을 누르면 mark모드 다시 y를 누르면 코드모드
+
+크롬 웹스토어 -> jupyter notebook -> 추가후 ->오른쪽위에 핀셋활성화 -->아이콘 누르고 allow길게적혀있는거
+-> 파일url에 대한 엑세스 허용 - ipynb를 찾고 연결프로그램(구글 크롬으로 항상연결하기)
+
+requests모듈이 필요
+pip install --upgrade requests
+
+이진법 = 전기가 흐르는지 안흐르는지 0,1로구분
+2진수하나 = 1비트
+8비트 = 1바이트
+2진수 8개(바이트) --> 영어 +1개국어 --> 확장 ANSI
+		 = euc-kr, euc-ch....
+
+인터넷 상태창에서 jupyter notebook view눌러서 advanced options
+또는 확장프로그램 관리에서 jupyter notebook view에서 세부정보에서 파일 URL에 대한 엑세스 허용 체크
+하고 새로고침하면 나옴
+
+웹프로그램은 html이나 json 형식으로 줄 수 있는데
+html형식은 html값으로 주지만 json은 딕셔너리 형태로 주기때문에
+훨씬 원하는 데이터를 뽑기 편하다.
+
+API	
+	Application programming interface
+	-> 프로그래밍을 하기 위한 수단
+
+이중 리스트 형 
+똑같은 원소를 갖는 딕셔너리형 리스트
+리스트를 원소를 갖는 딕셔너리

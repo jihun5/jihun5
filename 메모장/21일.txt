@@ -1,0 +1,90 @@
+					-작업폴더열기(최우선)
+			vscode 		-색상 및 아이콘 테마
+					-화면 확대/ 축소
+					-설정화면 열기 - 폰트사이즈 설정
+빅데이터분석	
+
+
+					git클라이언트 설치  - git클라이언트 환경설정
+
+
+							- 사이트 가입	
+			github		계정설정		- 인증서생성
+							- github에 인증서 등록
+
+
+					저장소 생성
+
+
+					github 활용 	- clone
+							- commit, push
+							- Pull
+							- 충돌해결
+
+
+
+
+			운영체제 		window		파일관리(경로관리)
+					Linux/Max	 파일관리
+
+
+
+
+			01-데이터수집	- openAPI데이터 수집(0~7번)		-requests 모듈
+									-json 데이터 처리	 -list를 포함하는 딕셔너리
+										 	 -dict를 포함하는 리스트 
+
+			
+
+					- 웹 페이지 데이터 수집(08~13번)	- BeautifulSoup4 모듈	- HTML
+												- CSS
+					
+									 - Selenium 모듈		 
+
+
+
+			02-데이터전처리
+
+			03-탐색적 데이터 분석
+
+			04-확증적 데이터 분석
+
+			05-데이터마이닝	
+
+
+
+git clone git@github.com:사용자id/저장소id
+
+컴퓨터(하드웨어(h/w)) 
+cpu. gpu
+ram
+hdd.......
+
+- 컴퓨터 장치들을 통제하기 위해(windows사용, 소프트웨어, os(운영체제)) 
+- 프로그램(게임, exe 등, 응용 소프트웨어) 
+({- 초기big size 컴퓨터 비쌈 (운영체제,다중체제(여러명)) - unix -> Sunos....soralis....등
+- -> linux ->fedora ->Redhat ->centos ->ubuntu - Android
+            	 -> mac - ios}) - 멀티유저(기업시장)
+개인용(fat-32,파일다중저장(오류시 블루스크린 및 전체제어불가), 운영체제)
+-파일시스템() 
+- IBM->MS_DOS->win3.1...95...98...me
+
+5번연습 관련
+카카오개발자 홈페이지 - 내 어플리케이션
+REST API 키가 필요 - 899a1eedbcb6713b4e78b75f1e3ed026
+	다음 검색의 REST API에 들어가서 책 검색하기 누르기
+	https://dapi.kakao.com/v3/search/book?query={query}&{page}={page}&size={size}
+	홈페이지 설명에서 내가 필요한 정보가 어떤 변수로 적혀있는지 확인하기(meta, documents)
+	본문에서 meta는 Document를 설명하기 위한 것
+
+카카오에서 은혼이라는 키워드로 검색된 모든 책의 총가격은 얼마인가? sum 
+CSS = 이름{속성 : 값} python에서 css 속성, 값, 이름값 찾기
+
+스크랩핑 -> 단일 페이지로부터의 데이터수집
+크롤링 ->특정 페이지로부터 파생되는 하위페이지까지 일괄 수집
+크롤러 -> 크롤링을 수행하는 소프트웨어(=검색엔진), 
+- 사이트 디자인이 바뀌면 코딩은 무의미(지속적이지 않음)
+외부에서 가져온 data의 경우 strip()을 써주는 것이 의무(원치않는 공백제거)
+
+
+

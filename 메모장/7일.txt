@@ -1,0 +1,99 @@
+오늘의 문제
+등수매기기(https://school.programmers.co.kr/learn/courses/30/lessons/120882) 통과
+최대값 뽑아내기(https://school.programmers.co.kr/learn/courses/30/lessons/120847) 통과
+카운트다운(https://school.programmers.co.kr/learn/courses/30/lessons/181899)통과
+배열 두배 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/120809)
+카운트 업 (https://school.programmers.co.kr/learn/courses/30/lessons/181899) 통과
+세균증식 (https://school.programmers.co.kr/learn/courses/30/lessons/120910) 통과
+
+score = [[80, 70], [90, 50], [40, 70], [50, 80]]
+# print(score[0][0] + score[0][1])
+ansnwer = []
+# result = [1, 2, 4, 3]
+# 1번 score[a] = [80, 70]
+# 2번 따로 뽑아내기 arg = [socre[a][0]+socre[a][1]]
+# print(score[0][0]+score[0][1]) = a,
+# print(score[1][0]+score[1][1]) = b ....
+# lista = [80],[70],[55],[65] # a,b,c,d
+# a>b 1번 비교 하면서 1등 2등 3등 4등 가리면 될듯
+# print(score[a]) = 80, 70
+# lista = score[a], score[b]
+# avg = []
+# lista = []
+# # b = []
+# # result = []
+# for a in range(len(score)): #4번반복
+#     lista.append(score[a][0]+score[a][1]) # 합의 길이 구함
+# for b in range(len(lista)): #4번반복
+#     avg.append(lista[b]/2) # 평군까지 구했어
+# # for c in range(len(avg)): #4번 반복
+# print(avg)
+# avg = [75, 70, 55, 65]
+# result = sorted(avg)
+# result.reverse()
+# print(result)
+# ansnwer = []
+# for i in avg:
+#     ansnwer.append(result.index(i)+1)
+# print(ansnwer)
+
+# 1번 최대값을 찾는다
+# 2번 그 다음 값을 찾는다.
+# 3번 곱한다
+numbers = [1, 2, 3, 4, 5]
+# result = 4x5=20
+max1 = max(numbers)
+numbers.remove(max1)
+max2 = max(numbers)
+print(max2*max1)
+
+# start = 10
+# end = 3 #까지
+# # result = [10,9,8,7,6,...]
+# num = 0
+# answer = []
+# for a in range(end+1, start+2):
+#     num = a-1
+#     answer.append(num)
+# print(answer)
+# answer.sort(reverse=True)
+# print(answer)
+
+numbers = [1, 2, 3, 4, 5]
+# numbers[0] = numbers[0]*2
+# numbers[1] = numbers[1]*2
+for a in range(len(numbers)):
+    ansnwer.append(numbers[a]*2)
+print(ansnwer)
+
+5. 카운트 다운문제와  동일
+
+n = 2
+t = 10
+# result = 2048
+'''
+t시간에 2배만큼 증식 **
+'''
+# 처음엔 2마리
+# 1시간 후에 4마리 2*2
+# 2시간 후에 8마리 4*2 2의 3승
+# ...10시간 후에는 2*2*2*2*2*2*2* 2의 10승 곱하기 x2인데
+# (n*t)*2
+# 처음엔 7마리
+# 1시간 후에 7*2 = a1
+# 2시간 후에 14*2 28 a1*2 = a2
+# 처음 세균수 x (시간 x 2의 제곱) a2*2
+# t 시간일 떄 n*2*t
+# 2시간일 때 (n*2)*t
+# 3시간일 때 ((n*2)*2)t
+
+
+# n*2 = 1시간일때 mul
+# (n*2)*2가 2시간일때 mul*2
+# ((n*2)*2)*2 3시간일때
+# (((n*2)*2)*2)*2 4시간일때
+# n*2는 기본 베이스에다가 1시간당 *2씩 증가야
+# *개수가 3시간일때 3개 
+# *개수가 4시간일때 4개
+즉 t의 갯수만큼 2의 제곱이 늘어난다
+(n*(2**t))

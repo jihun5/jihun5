@@ -1,0 +1,77 @@
+오늘의 문제
+개미군단(https://school.programmers.co.kr/learn/courses/30/lessons/120837)
+최댓값 만들기(2)(https://school.programmers.co.kr/learn/courses/30/lessons/120862)
+문자열 정수의 합(https://school.programmers.co.kr/learn/courses/30/lessons/181849)
+길이의 따른 연산(https://school.programmers.co.kr/learn/courses/30/lessons/181879)
+첫번째로 나오는음수(https://school.programmers.co.kr/learn/courses/30/lessons/181896) ???
+
+answer1 = 0
+    answer2 = 0
+    answer3 = 0
+    a = 5
+    b = 3
+    c = 1
+    a1 =0
+    a2 =0
+    a3 =0
+    for i in range(0, hp):
+        if hp-(a*i) >= 0:
+            answer1 = i 
+            a1 = hp-(a*i) 
+    for d in range(0, a1+1):
+        if a1-(b*d) >= 0:
+            answer2 = d
+            a2 = a1-(b*d)
+    for e in range(0, a2+1):
+        if a2-(e*c) == 0:
+            answer3 = e
+            a3 = a2-(e*c)
+    answer = answer1+answer2+answer3
+    return answer
+
+
+
+
+
+def solution(numbers):
+    numbers.sort()
+    answer = max(numbers[0]*numbers[1],numbers[-2]*numbers[-1])
+    return answer
+
+def solution(num_str):
+    answer = 0
+    num = list(map(int, num_str))
+    for a in num:
+        answer += a
+    return answer
+
+def solution(num_list):
+    num1 = 0
+    num2 = 1
+    for a in num_list:
+        if len(num_list) >= 11:
+            num1 += a
+            answer = num1
+        else :
+            num2 *= a
+            answer = num2
+    return answer
+
+# num_list = [12, 4, 15, 46, 38, -2, 15]
+# #각각의 요소를 꺼내어 0보다 작을시 그 인덱스 값을 출력하도록 하라
+# search = 0
+# for a in range(len(num_list)):
+#     if num_list[a] < 0:
+#         search = num_list[a]
+#         answer = num_list.index(search)
+#     elif num_list[a] > 0:
+#         answer = -1
+# # 인덱스의 몇번째가 -2인가?
+# print(answer)
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+wsl --update
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+wsl --set-default-version 2
+wsl --list –online
+wsl --install -d Ubuntu-20.04

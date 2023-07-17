@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!-- html5를 의미  -->
+<!-- 저장단축키 ctrl s  -->
+<body>
+<!-- 
+<head>
+    <meta charset="UTF-8">
+    
+
+<title> big data class</title>
+
+
+</head>
+
+<body>
+<h1><hello style="background-color:red;"> hello world1 </h1>
+<h1 style="color:blue">    hello world1 </h1>
+<h1 style="font-size:400%"> hello world1 </h1>
+<h1 style="background-color:red;"></h1>
+<h1 style="color:blue" hello world1></h1>
+<h2><b>hello</b> world2 </h2>
+<p> &nbsp; hello <del> world3</del></p>
+
+<br>
+<br>
+
+<a href = "https://namu.wiki/w/Hello(Adele)",target="_blank"> hello </a>
+<br>
+<br>
+<a href = "https://balidave.com/",target="_blank">
+<img src = "C:\Users\User\Desktop\asd.jpg" width="320" height ="214">
+</a>
+<ul>
+    <li>Hello1</li>
+    <br>
+    <li>Hello2</li>
+    <li>Hello3</li>
+</ul>
+
+<br>
+
+<>
+ <li> <a href = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fko%2Fsearch%2Fhello&psig=AOvVaw1duZx-pwulFvan8j1PgCtd&ust=1686379369364000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCJCQwIzLtf8CFQAAAAAdAAAAABAD",target="_blank"> hi1 </a></li>
+ <br>
+ <li> hi2</li>
+ <li> hi3</li> -->
+
+
+
+<!-- 테이블 그리기 -->
+<table>
+    <thaed>
+        <tr>
+            <th> 이름 </th>
+            <th> 이메일</th>
+            <th> 패스워드</th>
+        </tr>        
+    </thaed>
+
+    <tbody>
+    <tr>
+        <td> 킴킴킴</td>
+        <td> kim@google.com </td>
+        <td> 킴12</td>
+    </tr>
+    <tr>
+        <td> 킴킴킴</td>
+        <td> kim@google.com </td>
+        <td> 킴12</td>
+    </tr>
+    <tr>
+        <td> 킴킴킴</td>
+        <td> kim@google.com </td>
+        <td> 킴12</td>
+    </tr>
+    <div style="background-color: lightblue; color: green; text-align: center">
+
+        <h1> div스타일 적용</h1>
+        <p> div요소로 여러 요소들을  묶은 다음에 style 속성과 클래스 등을 이용하여 한번에 스타일을 적용할수 있습니다.</p>
+</div>
+    </tbody>
+</table>
+
+<div style="background-color: rgb(156, 72, 138); color: rgb(196, 212, 47); text-align: left">
+
+    <h1> div스타일 적용</h1>
+    <p> div요소로 여러 요소들을  묶은 다음에 style 속성과 클래스 등을 이용하여 한번에 스타일을 적용할수 있습니다.</p>
+</div>
+
+
+
+
+<body>   
+
+<form action="localhost:8000/author/new" method="POST" id="my_form">
+    이름 : <input type = "text" name="my_name" id ="input_name">
+    <br><br>
+    이메일 : <input type = "text" name="my_email" id ="input_email">
+    <br><br>
+    패스워드 <input type ="password" name="my_pw" id ="input_pw">
+    <br><br>
+    생일 : <input type = "date">
+    <br><br>
+    성별
+    <input type='radio' name='gender' value='female' />여성
+    <input type='radio' name='gender' value='male' />남성
+    <br><br>
+
+     <input type="submit" value="회원가입">
+
+ </form>   
+<script>
+    // form태그에서 submit버튼이 눌렀을때, 서버로 post 요정하기 이전에 하이재킹
+    // 전체 문서에서, 특정한 form태그가 submit될때 하이재킹
+    //getElementsByClassname
+    //getElementsByTagname
+    document.getElementById("my_form").onsubmit = function(event){
+        var name = document.getElementById("input_name").value ;
+        var name = document.getElementById("input_email").value ;
+        var name = document.getElementById("input_pw").value;
+        if (name === ""|| email ==="" || password ===""){
+            alert("이름, eamil, password는 필수값입니다.")
+            event.preventDefault();
+        }
+        if(password.length <8){
+            alert("비밀번호가 너무 짧습니다. 최소 8자 이상을 입력해주세요")
+            event.preventDefault();
+        }
+    };
+    </script>
+<head>
+    <meta charset="UTF-8">
+
+    
+
+<title> big data class</title>
+<style>
+    .my_class{
+        color: red;
+    }
+   
+</style>
+
+<script>
+    functoin.chageText(){
+//대상이 되는 html 태그를 pick -> getElementsByCLassName
+// 복수형으로 pick된 데이터는 list 형태
+// for문으로 하나씩 순회하면서 태그의 text 변경
+}
+    </script>
+</head>
+<body>
+
+    <p class="my_class">
+        hello world1
+    </p>
+    <p class="my_class">
+        hello world2
+    </p>
+    <button onclick="changeText()"> 문자변환 </button>
+
+</body>
+
+</html>
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>big data class</title>
+        <link rel="stylesheet" href = "C:\Users\User\Desktop\asd.css">
+
+        <script>
+            function changeText(){
+                document.getElementById("demo").innerHTML = "자바스크립트를 배워보자";
+            }
+       
+        </script>
+    </head>
+<body>
+    <h1>자바스크립트를 이용한 문장삽입</h1>
+    <p id="demo"></p>
+    <button onclick="changeText()"> Click </button>
+
+  
+    </body>
+    </html>
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title> HTML JS</title>
+    
+        <script src="qwe.js"> </script>
+    </head>
+<body>
+    <h1>자바스크립트를 이용한 문장삽입</h1>
+    <p id="demo"></p>
+    <button onclick="changeText()"> Click </button>
+
+    </body>
+    </html>

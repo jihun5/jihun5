@@ -1,0 +1,1680 @@
+1. 각도기
+각에서 0도 초과 90도 미만은 예각, 90도는 직각, 90도 초과 180도 미만은 둔각 180도는 평각으로 분류합니다. 각 angle이 매개변수로 주어질 때 예각일 때 
+1, 직각일 때 2, 둔각일 때 3, 평각일 때 4를 return하도록 solution 함수를 완성해주세요.
+
+ex) angle = 70, result = 1, angle = 91, result = 3
+
+
+2. 짝수 홀수 개수
+num_list의 원소 중 짝수와 홀수의 개수를 담은 배열을 구하여라
+
+num_list =[1,2,3,4,5]
+ex) result = [2,3]
+
+
+3. 배열의 평균 값
+numbers의 원소의 평균값 구하기
+
+numbers = [1,2,3,4,5,6,7,8,9,10], reuslt = 5.5
+
+
+4. 중복된 숫자 개수
+정수 배열 array와 정수 n이 매개변수로 주어질 때, array에 n이 몇개 있는 지 구하시오
+
+ex) array = [1, 1, 2, 3, 4, 5], n = 1, 
+result = 2
+
+
+5. 배열의 유사도
+s1과 s2가 있을 때 같은 원소의 개수를 구하시오
+
+s1 = ["a", "b", "c"]
+s2 = ["com", "b", "d", "p", "c"]
+ex) result = 2
+
+
+6. 중앙값 구하기
+array의 중앙값을 구하여라
+
+array = [1,2,7,10,11]
+ex) result = 7
+
+
+7. 특정문자 제거하기
+my_string과 문자 letter이 매개변수일때 my_string에서 letter을 제거한 문자열을 구하여라
+
+my_string = "abcdef"
+letter = "f"
+result = "abcde"
+
+
+8. 피자 나눠먹기(3)
+피자 조각 수 slice와 피자를 먹는 사람의 n이 매개변수로 주어질 때,
+n명의 사람이 최소 한조각 이상을 먹으려면 최소 피자를 몇판을 시켜야 하는가?
+
+slice = 7
+n = 10
+result = 2
+
+9. 배열 원소의 길이
+strlist의 각 원소의 길이를 담은 배열을 구하라
+
+strlist = ["we", "are", "the", "wolrd!"]
+result = [2,3,3,6]
+
+10.대문자로 바꾸기
+mySting을 대문자로 바꾸기
+
+myString = "aBcDefg"
+result = "ABCDEFG"
+
+11.자릿수 더하기
+정수 n이 매개변수로 주어질 때, n의 각 자리의 숫자합을 출력하라
+
+n = 1234
+result = 10
+
+12.문자열 섞기
+길이가 같은 문자열 str1, str2가 있을 때 번갈아 가면서 한번씩 등장하는 문자열을 출력하라
+
+str1 = "aaaaa"
+str2 = "bbbbb"
+result = "ababababab"
+
+
+13.이어 붙인 수
+num_list의 홀수만 순서대로 이어붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 출력하라
+
+num_list = [3,4,5,2,1]
+result = 393
+
+
+14.카운트 업
+start와 end가 주어질 때, start부터 end까지의 숫자를 차례때로 담은 리스트를 출력하라
+
+strat =3
+end = 10
+result = [3,4,5,6,7,8,9,10]
+
+
+15. 글자 이어 붙여 문자열 만들기
+my_string과 정수배열 index_list가 매개 변수로 주어진다 index_list의 원소들에 해당하는 인덱스의
+글자들을 순서대로 이어 붙인 문자열을 return
+
+my_string = "cvsgiorszzzmrpaqpe"
+index_list=[16,6,5,3,12,14,11,11,17,12,7]
+result = "programmers"
+
+
+16. 접미사 인지 확인하기
+my_string과 is_suffix가 주어질 때, is_suffix가 my_string의 접미사라면 1을 아니면 0을 출력하라
+
+
+my_string = "banana"
+is_suffix = "ana"
+result = 1
+
+17. ad 제거하기
+strArr에서 "ad" 문자열을 포함하고 있는 모든 문자열을 제거하고 남은 문자열을 순서유지하여 출력하라
+
+
+strArr = ["and","notad","abcd"]
+result = ["and","abcd"]
+
+
+18. 공백으로 구분하기 2
+my_string에 나온 단어를 앞에서부터 순서대로 담은 문자열을 출력하라
+
+my_string = "i  love you
+my_string = "  programers "
+result = ["i","love","you"]
+result = ["programmers"]
+
+
+19. 배열의 원소만큼 추가하기
+arr의 앞에서부터 차례대로 원소를 보면서 원소가 a라면 x의 맨 뒤에 a를 a번추가하는 일을 반복하여 출력하라
+
+arr = [5,1,4]
+result = [5,5,5,5,5,1,4,4,4,4]
+
+
+20. 문자열 정수의 합
+num_str의 각 자리의 숫자 합을 구하라
+
+num_str = "123456789"
+result = 45
+
+
+21. 배열의 원소 삭제하기 
+arr, delete_list가 주어지고, arr의 원소 중 delete_list의 원소를 모두 삭제하고 arr의 순서를 유지한 체 출력하라
+
+arr = [293, 1000, 395, 678, 94]
+delete_list = [94, 777, 104, 1000, 1, 12]
+result = [293, 395, 678]
+
+
+22. 가장 큰 수 찾기
+
+array의 가장 큰수를 찾고 그 index의 배열을 담은 것을 출력하라
+
+array = [1,8,3]
+result = [8,1]
+
+
+23. 인덱스 바꾸기
+my_string과 정수 num1, num2가 매개변수로 주어질 때, my_string에서 인덱스 
+num1과 인덱스 num2에 해당되는 문자를 바꾼 문자열을 출력하라
+
+my_string = "hello"
+num1 = 1
+num2 = 2
+result = "hlelo"
+
+24. k의 개수
+정수 i, j, k가 매개변수로 주어질 때 i부터 j까지 k가 몇번 등장하는지 출력하시오
+
+i = 1
+j = 13
+k = 1
+result = 6
+
+
+25. 등수 매기기
+영어 점수와 수학 점수의 평균 점수를 기준으로 학생들의 등수를 매기려고 한다.
+영어 점수와 수학점수를 담은 score가 주어질 때 평균을 기준으로 등수를 담은 배열을 출력하라
+
+scroe = [[80, 70], [90, 50], [40, 70], [50, 80]]
+result = [1, 2, 4, 3]
+
+
+26. 배열 화전시키기
+numbers와 문자열 direction이 매개변수로 주어질 때, numbers의 원소를 direction의 방향으로
+회전시킨 배열을 출력하라 
+
+numbers = [1,2,3]
+direction = "right"
+rsult = [3,1,2]
+numbers = [4,455,6,4,-1,45,6]
+direction = "left"
+result = [455,6,4,-1,45,6,4]
+
+
+27. 진료 순서 정하기
+emergency가 매개변수로 주어질 때, 응급도가 높은 순서대로 진료 순서를 정한 배열을 출력하라
+
+emergency = [3, 76, 24]
+result = [3, 1, 2]
+
+
+28. 행렬의 덧셈
+
+arr1 = [[1,2],[2,3]]
+arr2 = [[3,4],[5,6]]
+return = [[4,6],[7,9]]
+
+
+29. 딕셔너리
+lista = ['A','A','B','O','O','AB','AB']를 딕셔너리로 만들 것
+rssult = {'A':2, 'B':1 ...}
+
+
+30. While문 써서 홀수만 더하기 (100이하의)
+
+
+
+31. 이중 포문을 사용하여 구구단 1~9단까지 한꺼번에 출력하라
+
+
+
+32. 선택정렬 0번째 index부터 가장 작은 값을 채워나가자
+lista = [93,45,21,30,20,94,66,71,45]
+이중 포문을 사용하여 가장 작은 값부터 채워서 새롭게 lista를 정렬하기
+이중표문을 이용하여 sort문 만들기
+
+
+33. lambda함수(함수를 간편하게 표현하기 위한방식, 함수를 변수에 담기 위한 방식)
+def add(a,b);
+return a+b
+
+add_lambda = lambda a, b : a+b
+print(add_lambda(1,2))
+
+덧셈, 뺄셈, 곱셈을 람다 함수식으로 넣어서 표현하고
+oddtest라는 매개변수명을 만들어 x변수가 짝수면 True, 홀수면 false를 만족하는
+람다함수식을 만들어보아라
+
+
+34.
+lista = [10,20,30,40,50]이 있을 때,
+다섯개의 숫자중에 lista의 값을 빠짐없이 3개씩 빈 리스크에 담아 출력하라
+재귀함수
+
+
+35. import math를 사용하여 map을 사용하여 출력하라
+lista = [1.1, 2.2, 3.3]
+list의 값을 정수타입으로 변환
+list의 값을 제곱으로 변환 
+
+
+36.
+a = 12345일때
+map으로 하나의 묶음으로 담기 위한 리스트로 받고싶을 경우를 출력하라
+
+
+37-1 이중for문으로 별찍기 
+
+
+
+37.
+Person 이라는 클래스를 만들고
+생성자로 이름, 나이, 성별, email이라는 매개변수를 받아 register이라는 매서드를 만들고
+해당매서드 에서는 myinfo라는 객체 변수의 이름 나이 성별 eamil 정보를 문자열로 받는다
+2명의 person을 만들어서print(p1.myinfo), print(p2.myinfo)
+
+
+38. 파이썬내에서 함수 가져와서 사용하기
+# 클래스의 상속
+# 부모 클래스에서의 기능을 자식클래스에서 물려받는것
+# class 자식클래스명(부모클래스명) 이런 형식으로 선언
+class Calculator:
+    def __init__(self):
+        self.result = 0
+    def plus(self, a):
+        self.result += a 
+    def minus(self, a):
+        self.result -= a
+    def multiply(self, a):
+        self.result *= a
+
+# Calculator상속 후 divide 매서드 추가, 
+# 부모 클래스를 건드리면 관련된 자식함수들 모두 변경 
+class CalculatorChild(Calculator):
+    def divide(self, a):
+        self.result /= a
+    # 부모한테 있는 기능을 재선언하게 되면, 부모의 기능보다
+    # 자식의 기능이 우선하게 되고, 이를 overriding이라고 한다.
+    def multiply(self, a):
+        self.result *= (a+1)
+
+# if __name__ == "__main__": 이거를 사용하면 다른 모듈에서 출력이 안되게끔 하는 코드 if를 하고 들여쓰기 
+cc1 = CalculatorChild()
+cc1.plus(100)
+cc1.divide(10)  
+# 파이썬에서 overlodding은 안하는 것 같다(다른 매개변수를 가진 매서드를 추가하면 다른 언어에서는 매개변수의 개수에 따라 다른 값을 출력한다.)
+cc1.multiply(10) #부모 클래스에서는 *10, 자식클래스에서는 a+1이기때문에 *11
+print(cc1.result)
+print(cc1)
+# lista = [10,20,30] 을 프린트 한경우 왜 주소가 안나오고 값이 나오는가?
+# print함수가 속해 있는 클래스는 object클래스 함수를 상속받고 있는데
+# list, dict같은 파이썬에서 자주 사용되는 객체값을 value형식으로 출력해주는 함수가 있다.
+c1 입력하기
+
+39. 예외처리 구문 try except 구문
+while True:
+    # first = int(input("분자를 입력해주세요"))
+    # second = int(input("분모를 입력해주세요"))
+    # 분자를 입력해 주세요 first
+    # 분모를 입력해주세요 second
+    # print(first/second)
+# 사용자가 0으로 숫자를 나누게 되면 division by zero 에러 발생
+# 문제 발생 가능성이 있는 곳에 try
+    try :
+        first = int(input("분자를 입력해주세요")) # try 구문 안에 넣는 이유는 혹시나 모를 오류때문에 
+        second = int(input("분모를 입력해주세요"))
+        print(first/second)
+    # 문제가 발생했을 때 이후의 action except
+    except ZeroDivisionError as zd:
+        print(f"{zd}오류입니다.")
+    except ValueError as ve:
+        print(f"{ve}오류입니다.")
+    except Exception:
+        print(f"{Exception}오류입니다.")    
+    #except 중에 하나가 결러서 오류가뜨고 난뒤에 다시 while문으로    
+    #finally는 문제가 있든 없든 무조건 실행 
+    finally:
+        print("결과를 확인해 주세요")
+# 개발자로서의 기본 문제가 발생할 것 같은 곳은 try, except로 감싸기
+
+# 에러 강제의 예시
+# while True:
+#     raise Exception
+# 부모 클래스에 raise Excpetion(에러 강제)를 통해
+# 자식 클래스로 하여금 overriding(재정의) 유도
+class Bird:
+    def fly(self):
+        raise Exception
+class Eagle(Bird):
+    def fly(self):
+        print("fly fly")
+    pass
+eagle1 = Eagle()
+eagle1.fly()
+
+
+40.
+f = open("text.txt","r", encoding="UTF-8")
+# readlines : 데이터를 리스트형태로 라인별로담아둔다
+lines = f.readlines()
+for a in lines:
+    print(a[0])
+print(lines)
+# 데이터 파싱하기가 편하다 위 형태가(파싱:가공)
+
+f = open("text.txt","r", encoding="UTF-8")
+# readlines : 데이터를 리스트형태로 라인별로담아둔다
+lines = f.read()
+print(lines)
+
+# a옵션으로 추가모드
+f = open("test.txt", "a", encoding="UTF-8")
+#0~9번쨰 줄입니다 -> 10번째~19번쨰줄입니다.
+for a in range(10,20):
+    data = "%d번째 줄입니다. \n" %a
+    f.write(data)
+f.close()
+
+import os
+# os 라이브러리를 활용한 디렉터리 내에 파일 검색
+# .py로 끝나는 파이썬확장파일을 search
+# 현재 폴더에서만 검색
+# searchDir = r'C:\Users\user\Desktop\오지훈' #\python-basic-syntax
+# 파일, 디렉토리 목록을 뽑아내는 listdir 함수 사용
+# dirList = os.listdir(searchDir)
+# print(dirList)
+# for dir in dirList:
+#     dirTuple = os.path.splitext(dir)
+#     if(dirTuple[1]=='.py'):
+#         fullpath = os.path.join(searchDir, dir)
+#         print(fullpath)
+
+# # 모든 폴더까지 검색
+# searchDir = r'C:\Users\user\Desktop\오지훈'
+# def searchRecur(searchDir): 
+#     dirList = os.listdir(searchDir) #searchDir 목록안에 있는 파일들 꺼내기
+#     for dir in dirList: # searchDir 디렉토리 리스트 목록안에 있는 디렉토리(파일)꺼내기들 꺼내기 
+#         filename = os.path.join(searchDir, dir) # filename = searchDir 목록안에 있는 디렉토리(파일) 경로를 디렉토리 serarchDir 값에 넣기 
+#         if os.path.isdir(filename): # 만약 filename과 isdir의 경로가 같다면  
+#             dirlist2 = os.listdir(filename) #dirlist2 의 경로는 filename경로 값에 listdir 
+#             for dir2 in dirlist2:  # filename경로 값에 listdir 값에 dir2를 넣고
+#                 dirTuple2 = os.path.splitext(dir2) # dirTuple2 = os.path.splitext(dir2) dir2의 값에 경로를 dirTuple2에넣고
+#                 if(dirTuple2[1]=='.py'): #만약 dirTuple2에 뒤에 즉 (파일명)뒤에 확장자가 py의 값을 가지게 되면 
+#                     fullPath = os.path.join(filename, dir2) # fullpath의 경로는filname(상위폴더)에서 dir2(filename의 경로 값)
+#                     print(fullPath) #결국 여기서 가져올 수 있는것은 경로인데 무슨 경로나filname내부에 폴더를 뒤져서 나온 .py파일들을 가져갈 수 있는 것
+#         dirTuple = os.path.splitext(dir)#dir값이 아니면 dirTuple값으로 꺼내기 
+#         if(dirTuple[1]=='.py'):#파일 확장자 명이 py일경우 추가
+#             fullPath = os.path.join(searchDir, dir)#위와 같은 경로 추가 searchDir값에
+#             print(fullPath) #py확장자를 가지고 있는 searchDir 값에 fullPath 리스트 안에 넣기
+# #알아 내고자하는 것 : 내 파일 경로 안에 py확장자를 쓰는 것의 경로 
+# # 상위폴더랑 내에는 py파일명확장자가 없기때문에 하위폴더를 검색하고 그안에서 py값을 찾아내서 그 경로를 업데이트 시켜야 한다.
+# # 모든 폴더까지검색 
+
+
+def searchRecur(searchDir):
+    try: 
+        dirList = os.listdir(searchDir)
+        if not dirList: #dirList에 파일이 없으면 종료 
+            return
+        for dir in dirList: 
+            filename = os.path.join(searchDir, dir)#dir폴더명을 다시 찾기 
+            if os.path.isdir(filename): 
+                searchRecur(filename) 
+            dirTuple = os.path.splitext(dir)
+            if(dirTuple[1]=='.py'):
+                fullPath = os.path.join(searchDir, dir)#위와 같은 경로 추가 searchDir값에
+                print(fullPath) #py확장자를 가지고 있는 searchDir 값에 fullPath 리스트 안에 넣기
+    except Exception:
+        print("예외입니다")
+searchDir = r'C:\Users\user\Desktop\오지훈' #재귀함수를 만들때 가장 중요한건 비슷한 것들 묶기
+searchRecur(searchDir)
+
+
+41.
+
+# 코인 시세정보 API, url
+import json #**********************************************굉장히 중요
+# 실제 업무에서  date를 주고받는 경우 json형식으로 주고 받는다 
+url = "https://api.binance.com/api/v3/ticker/24hr"
+response = requests.get(url)
+data_json = json.loads(response.text)
+print(data_json)
+
+# 출력 결과가 
+# ********************************************************굉장히 중요
+# lastPrice : xxxx(가격)
+# Key는 "symbol" if ~~ == "BTCUSDT", lastPrice를 key로 값을
+# key값 value값 뽑아내기
+# dict.keys(), dict.values() 
+for a in data_json:
+    if a['symbol'] == "BTCUSDT":
+        print(f"{a['symbol']}코인의 price는 {a['lastPrice']}입니다.")
+
+
+# # csv파일 parsing
+# import seaborn
+# from matplotlib import pyplot
+# import pandas
+
+# file_path = r'C:\Users\user\Desktop\오지훈\tips.csv'
+# csv_date = pandas.read_csv(file_path)
+# # print(csv_date)
+
+# # 성별에 따라 tip이 어떻게 달라지는 지
+# # agg : 집계함수, mean:평균, std:표준편차
+# tip_by_gender = csv_date.groupby('gender')['tip'].agg(['mean', 'std']).reset_index()
+# # tip_by_day = csv_date.groupby('day')['tip'].agg(['mean', 'std']).reset_index()
+
+# seaborn.barplot(x='gender', y='mean', data=tip_by_gender, yerr=tip_by_gender['mean'], capsize = 0.1)
+# seaborn.despine() # 테두리 없애주는 함수
+# pyplot.title('average tip per gender')
+# pyplot.xlabel("gender")
+# pyplot.ylabel("average tip")
+# pyplot.show()
+
+# 코인시세 10초에 한번씩 db insert
+# import time
+# import json
+# import requests
+# import mysql.connector
+# while True:
+#     url = "https://api.binance.com/api/v3/ticker/24hr"
+#     response = requests.get(url)
+#     data_json = json.loads(response.text)
+#     for a in data_json:
+#         if a['symbol'] == "BTCUSDT":
+#             try:
+#                 connector = mysql.connector.connect(host="localhost", port="3406", user="root", password="1234", database="practice")
+#                 cursor = connector.cursor()
+#             except mysql.connector.Error as err:
+#                 print(err)
+#             add_data = "INSERT INTO coin_price (coin_name, last_price) VALUES(%s, %s)"
+#             data = ("BTCUSDT", a['lastPrice'])
+#             try:
+#                 cursor.execute(add_data, data)
+#                 connector.commit()
+#             except mysql.connector.Error as err:
+#                 print(err)
+#             cursor.close()
+#             connector.close()
+#     time.sleep(10)
+
+42.
+json 예제 
+import json
+ 
+# 테스트용 Python Dictionary
+customer = {
+    'id': 152352,
+    'name': '강진수',
+    'history': [
+        {'date': '2015-03-11', 'item': 'iPhone'},
+        {'date': '2016-02-23', 'item': 'Monitor'},
+    ]
+}
+ 
+# JSON 인코딩
+jsonString = json.dumps(customer)
+ 
+# 문자열 출력
+print(jsonString)
+print(type(jsonString))   # class str
+jsonString = json.dumps(customer, indent=4)
+print(jsonString)
+{
+    "history": [
+        {
+            "date": "2015-03-11",
+            "item": "iPhone"
+        },
+        {
+            "date": "2016-02-23",
+            "item": "Monitor"
+        }
+    ],
+    "id": 152352,
+    "name": "\uac15\uc9c4\uc218"
+}
+import json
+ 
+# 테스트용 JSON 문자열
+jsonString = '{"name": "강진수", "id": 152352, "history": [{"date": "2015-03-11", "item": "iPhone"}, {"date": "2016-02-23", "item": "Monitor"}]}'
+ 
+# JSON 디코딩
+dict = json.loads(jsonString)
+ 
+# Dictionary 데이타 체크
+print(dict['name'])
+for h in dict['history']:
+    print(h['date'], h['item'])
+
+
+43. (https://www.daleseo.com/python-json/)
+import json
+
+json_object = {
+    "id": 1,
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+    },
+    "admin": False,
+    "hobbies": None
+}
+
+json_string = json.dumps(json_object)
+print(json_string)
+
+import json
+
+json_object = {""" 위와 동일 """}
+
+json_string = json.dumps(json_object, indent=2)
+print(json_string)
+
+import json
+
+with open('input.json') as f:
+    json_object = json.load(f)
+
+assert json_object['id'] == 1
+assert json_object['email'] == 'Sincere@april.biz'
+assert json_object['address']['zipcode'] == '92998-3874'
+assert json_object['admin'] is False
+assert json_object['hobbies'] is None
+
+import json
+
+json_object = {
+    "id": 1,
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+    },
+    "admin": False,
+    "hobbies": None
+}
+
+with open('output.json', 'w') as f:
+    json.dump(json_object, f, indent=2)
+
+44.
+재귀 함수
+재귀 함수(Recursive Function)란 자기 자신을 다시 호출하는 함수를 의미한다
+
+단순한 형태의 재귀 함수 예제
+
+'재귀 함수를 호출합니다'라는 문자열을 무한히 출력한다
+어느정도 출력하다가 최대 재귀 깊이 초과 메세지가 출력된다
+def recursive_function():
+    print('재귀 함수를 호출합니다')
+    recursive_function()
+
+recursive_function()
+재귀 함수의 종료 조건
+재귀 함수를 문제 풀이에서 사용할 때는 재귀 함수의 종료 조건을 반드시 명시해야 합니다
+
+종료 조건을 제대로 명시하지 않으면 함수가 무한히 호출될 수 있다
+
+종료 조건을 포함한 재귀 함수 예제
+def recursive_function(i):
+    # 100번째 호출을 했을 때 종료되도록 종료 조건 명시
+    if i== 100:
+        return
+    print(i, '번째 재귀함수에서', i + 1, '번째 재귀함수를 호출합니다')
+    recursive_function(i + 1)
+    print(i, '번째 재귀함수를 종료합니다')
+
+recursive_function(1)
+팩토리얼 구현 예제
+𝑛! = 1 × 2 × 3 × ・・・ × (𝑛 - 1) × 𝑛
+수학적으로 0!과 1!의 값은 1이다
+# 반복적으로 구현한 n!
+def factorial_iterative(n):        
+    result = 1
+    # 1부터 n까지의 수를 차례대로 곱하기
+    for i in range(1, n + 1):
+       result *= i
+    return result
+
+# 재귀적으로 구현한 n!
+def factorial_recursive(n):        
+    if n <= 1: # n이 1 이하인 경우 1을 반환
+        return 1
+    # n! = n * (n - 1)!를 그대로 코드로 작성하기
+    return n * factorial_recursive(n - 1)
+
+# 각각의 방식으로 구현한 n! 출력(n = 5)
+print('반복적으로 구현:', factorial_iterative(5))
+print('재귀적으로 구현:', factorial_recursive(5))
+
+
+45.
+체 지향 프로그래밍 살펴보기
+코드의 중복 사용이 최소화되서 재사용성이 증가
+클래스의 매직 메소드를 사용할 수 있음
+네임스페이스
+프로그래밍 언어에서 객체를 구분할 수 있는 공간
+변수를 객체에 할당하면, 해당 객체는 딕셔너리 형태로 연결되서 네임스페이스에 저장됨
+파이썬의 클래스는 새로운 타입(객체)을 정의하기 위해 사용되고, 모듈과 마찬가지로 하나의 네임스페이스를 가짐
+globals()를 사용하면 전역 네임스페이스를 확인할 수 있음
+함수는 전역과 별개의 네임스페이스를 가짐
+  temp_variable = a
+  print(globals()) 
+__init__ : 클래스 인스턴스 생성시 초기화하며 실행되는 부분
+class의 값을 보고 싶으면 __dict__을 사용
+python class magic method - str
+__str__ 매직 메소드가 구현되어 있지 않은 상태에서 인스턴스를 print하면 object가 나옴
+print() 또는 str() 함수가 호출될 때 사용 - 기본적으로 str 메소드가 먼저 실행되며, str 메소드가 없으면 repr 메소드를 실행함
+python class magic method - repr
+__repr__ : str과 비슷
+개발, 엔지니어 레벨에서 객체의 엄격한 타입을 표현시 사용
+객체 표현을 반환함
+repr() 함수가 호출될 때 사용
+python class magic method - dir
+해당 인스턴스가 가진 모든 attribute를 list 형태로 보여줌(값을 보여주진 않음)
+python class magic method - dict
+__dict__
+특정 네임스페이스만 보고 싶다면, __dict__를 사용한 후, 특정 네임스페이스에 접근하면 됨
+python class magic method - doc
+__doc__
+docstring을 출력
+class Smartphone:
+	"""
+	Smartphone class
+	"""
+    def __init__(self, brand, informations):
+        self._brand = brand
+        self._informations = informations
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._informations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._informations}'
+    
+
+Smartphone1 = Smartphone('Iphone', {'color' : 'White', 'price': 10000})
+Smartphone2 = Smartphone('Galaxy', {'color' : 'Black', 'price': 8000})
+
+print(Smartphone1)
+print(Smartphone1.__dict__)
+
+print(Smartphone1._brand == Smartphone2._brand)
+print(Smartphone1 is Smartphone2)
+
+print(Smartphone.__doc__)    
+self란?
+self는 인스턴스 자기 자신을 뜻함
+인스턴스 : 클래스에 의해 만들어진 객체
+self가 있는 것이 인스턴스 변수
+인자에 self를 받는 것은 인스턴스 메소드 : get_information 함수
+인스턴스의 __class__는 사용된 클래스를 출력함
+class Smartphone:
+    """
+    Smartphone Class
+    """
+
+    def __init__(self, brand, details):
+        self._brand = brand
+        self._infomations = infomations
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._ infomations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._ infomations}'
+
+    def get_infomation(self):
+        print(f'Current Id : {id(self)}')
+        print(f'Smartphone Detail Info : {self._brand} {self._infomations.get("price")}')
+
+        Smartphone1 = Smartphone('Iphone', {'color': 'White', 'price': 10000})
+        Smartphone2 = Smartphone('Galaxy', {'color': 'Black', 'price': 8000})
+        
+        Smartphone1.detail_info()
+
+        print(Smartphone1.__class__, Smartphone2.__class__)
+        # 부모는 같음
+        print(id(Smartphone1.__class__) == id(Smartphone2.__class__))
+클래스 변수
+클래스 내부에 선언된 변수
+클래스 변수는 클래스의 네임스페이스에 위치함
+모든 인스턴스가 공유하는 변수
+Smartphone1.__dict__를 출력하면 클래스 변수는 보이지 않음
+dir(Smartphone1)를 출력할 때는 클래스 변수가 보임
+인스턴스 변수
+self.name 같이 self가 붙은 변수
+인스턴스 변수는 인스턴스의 네임스페이스에 위치함
+인스턴스 네임스페이스에서 없으면 상위에서 검색
+즉, 동일한 이름으로 변수 생성 가능(인스턴스 검색 후 => 상위 클래스, 부모 클래스 변수)
+class Smartphone:
+    """
+    Smartphone Class
+    """
+    # 클래스 변수
+    smartphone_count = 0
+    
+    def __init__(self, brand, infomations):
+        self._brand = brand
+        self._infomations = infomations
+        Smartphone.smartphone_count += 1
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._infomations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._infomations}'
+
+    def infomation(self):
+        print(f'Current Id : {id(self)}')
+        print(f'Smartphone Detail Info : {self._brand} {self._infomations.get('price'))}'
+
+    def __del__(self):
+        Smartphone.smartphone_count -= 1
+    
+Smartphone1 = Smartphone('Iphone', {'color' : 'White', 'price': 10000})
+Smartphone2 = Smartphone('Galaxy', {'color' : 'Black', 'price': 8000})
+	
+	
+print(Smartphone.__dict__)
+print(Smartphone1.__dict__)
+print(Smartphone2.__dict__)
+print(dir(Smartphone1))
+	
+print(Smartphone1.smartphone_count)
+print(Smartphone.smartphone_count)
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+1.
+def solution(angle):
+    if 0<angle<90:
+        answer = 1
+    elif angle == 90:
+        answer = 2
+    elif 90<angle<180:
+        answer = 3
+    elif angle == 180:
+        answer = 4
+    return answer
+
+2.
+def solution(num_list):
+    num1 = 0 
+    num2 = 0 
+    for a in num_list:
+        if a % 2 == 0:
+            num1 = num1+1    
+        else:
+            num2 = num2 +1
+    answer = [num1, num2]    
+
+
+3.
+def solution(numbers):
+    add = 0
+    avg = 0
+    for i in numbers:
+        add += i
+    avg = add/len(numbers)
+    answer = avg
+    return answer
+
+def solution(numbers):
+    return sum(numbers) / len(numbers)
+
+4.
+def solution(array, n):
+    answer = array[:]
+    array.count(n)
+    answer = array.count(n)
+    return answer
+
+def solution(array, n):
+    return array.count(n)
+
+5. 
+def solution(s1, s2):
+    answer = 0
+    for i in s1:
+        if i in s2:
+            answer += 1
+    return answer
+
+6.
+def solution(array):
+    array.sort()
+    a = len(array)//2
+    answer = array[a]
+    return answer
+
+def solution(array):
+    return sorted(array)[len(array) // 2]
+
+7.
+def solution(my_string, letter):
+    answer = ''
+    for a in range(len(my_string)):
+        if my_string[a] != letter:
+            answer += my_string[a]
+    return answer
+
+def solution(my_string, letter):
+    return my_string.replace(letter, '')
+
+8. def solution(slice, n):
+    answer = 0
+    if n%slice != 0:
+        answer = n//slice +1
+    elif n%slice == 0:
+        answer = n//slice
+    return answer
+
+def solution(slice, n):
+    return (n + slice - 1) // slice
+
+9.
+def solution(strlist):
+    answer = []
+    for a in strlist:
+        answer.append(len(a))
+    return answer
+
+def solution(strlist):
+    return [len(str) for str in strlist]
+
+10.
+def solution(myString):
+    answer = ''.join(myString.upper())
+    return answer
+
+11.
+def solution(n):
+    answer = 0
+    for i in str(n):
+        answer += int(i)
+    return answer
+
+def solution(n):
+    return sum(int(i) for i in str(n))
+
+12.
+def solution(str1, str2):
+    answer = ""
+    for a in range(len(str1)): # a= 012345
+        answer += str1[a]+ str2[a]
+    return answer
+
+13.
+def solution(num_list):
+    answer = 0
+    a1 = []
+    a2 = []
+    for a in num_list:
+        if a%2 != 0:
+            a1.append(a)
+        else:
+            a2.append(a)
+    
+    return int(''.join(map(str,a1))) + int(''.join(map(str,a2)))
+
+14.
+def solution(start, end):
+    answer = []
+    num = 0
+    for a in range(start-1, end):
+        num = a+1
+        answer.append(num)
+        answer.sort()
+    return answer
+
+def solution(start, end):
+    return list(range(start, end + 1))
+
+15.
+def solution(my_string, index_list):
+    lista = list(my_string)
+    answer = []
+    for a in index_list:
+        answer.append(lista[a])
+    return "".join(answer)
+
+def solution(my_string, index_list):
+    return ''.join([my_string[idx] for idx in index_list])
+
+16.
+def solution(my_string, is_suffix):
+    answer_list = [my_string[i:] for i in range(len(my_string))]
+    return 1 if is_suffix in answer_list else 0
+
+17.
+def solution(strArr):
+    answer = []
+    for a in strArr:
+        if "ad" not in a:
+            answer.append(a)
+    return answer
+
+
+18.
+def solution(my_string):
+    temp = my_string.strip().split(" ")
+    temp = list(filter(None, temp))
+    return temp
+
+19.
+def solution(arr):
+    answer = []
+    for a in arr:
+        temp = [a]* a
+        answer += temp
+    return answer
+
+20.
+def solution(num_str):
+    answer = 0
+    num = list(map(int, num_str))
+    for a in num:
+        answer += a
+    return answer
+
+21.
+def solution(arr, delete_list):
+    answer = []
+    for i in arr:
+        if i not in delete_list:
+            answer.append(i)
+    return answer
+
+def solution(arr, delete_list):
+ return [i for i in arr if i not in delete_list]
+
+
+22.
+def solution(array):
+    return [max(array), array.index(max(array))]
+
+23.
+def solution(my_string, num1, num2):
+    lista = list(my_string)
+    temp = []
+    temp = lista[num1]
+    lista[num1] = lista[num2]
+    lista[num2] = temp
+    answer = ''.join(lista)
+    return answer
+
+24.
+def solution(i, j, k):
+    answer = 0
+    num = []
+    for a in range(i, j+1):
+        if str(k) in str(a):
+            num.append(a)
+    str(num)
+    answer = str(num).count(str(k))
+    return answer
+
+25.
+def solution(score):
+    avg = []
+    lista = []
+    for a in range(len(score)):
+        lista.append(score[a][0]+score[a][1])
+    for b in range(len(lista)):
+        avg.append(lista[b]/2)
+    result = sorted(avg)
+    result.reverse()
+    answer = []
+    for i in avg:
+        answer.append(result.index(i)+1)
+    return answer
+
+def solution(score):
+    a = sorted([sum(i) for i in score], reverse = True)
+    return [a.index(sum(i))+1 for i in score]
+
+26.
+def solution(numbers, direction):
+    if direction == "right":
+        a = numbers.pop(-1)
+        numbers.insert(0, a)
+    elif direction == "left":
+        b = numbers.pop(0)
+        numbers.append(b)
+    return numbers
+
+def solution(numbers, direction):
+    return [numbers[-1]] + numbers[:-1] if direction == 'right' else numbers[1:] + [numbers[0]]
+
+
+27.
+def solution(emergency):
+    answer = []
+    temp = sorted(emergency, reverse=True)
+    for a in emergency:
+         answer.append(temp.index(a)+1)
+    return answer
+
+28.
+def solution(arr1, arr2):
+    answer = []
+    for a in range(len(arr1)): 
+        temp = []
+        for b in range(len(arr1[a])): 
+            temp.append(arr1[a][b]+arr2[a][b])
+        answer.append(temp)
+    return answer
+
+29.
+dicta = {}
+for a in lista:
+    if a not in dicta.keys():
+        dicta[a] = 1 # A:1
+    else:
+        dicta[a] = dicta[a] + 1
+print(dicta)
+
+# 방법 2
+if a not in dicta.keys():
+    dicta[a] = lista.count(a)
+print(dicta)
+
+30.
+sum = 0
+a = 0
+while a<100:
+    a += 1
+    if a%2 != 0:
+        sum += a
+print(sum)
+
+sum = 0
+a = 0
+while a<100:
+    a += 1
+    if a%2 == 0:
+        continue  # 짝수인 경우 더하지 않고 넘어간다 즉, 위와 같은 식
+    sum += a
+print(sum)
+
+31.
+for b in range(1, 10):
+    for a in range(1, 10):
+       print(f"{b} x {a} = {b*a}")
+
+32.
+for a in range(len(lista)-1): # 인덱스 값에 접근하기 위해 len를 사용 0~8까지 a는 0~8까지 각자 자리를 의미, 
+                              # -1을 하는 이유는 7번째가 완성이 되는순간 8번째랑 비교할 필요가 없어서
+    for b in range(a+1, len(lista)): # 비교의 대상이 되는 index를 의미, len(listb)는 똑같이 계속 8변을 반복 
+                                      # 범위를 a번째에서 lista로 설정해야 하나씩 줄여 나갈 수 있다. 
+                                      # a+1을 하는 이유는 자기 자신과 비교할 경우를 제외하기 위해
+        if lista[a] > lista[b]: 
+               # 자리 체인지
+               # lista[a], list[b] = lista[b], lista[a]
+            temp = lista[a]
+            lista[a] = lista[b]
+            lista[b] = temp
+print(lista)
+
+
+33.
+add = lambda a, b : a+b
+minus = lambda a, b : a-b
+multiply = lambda a, b : a*b
+
+def oddTest(x):
+    if x %2 == 0:
+        return True
+    else:
+        return False
+oddornot = lambda x : True if x % 2 ==0 else Flase
+
+34.
+def recur(lista,total_list,temp_list,n, m): # n은 a+1씩, 1씩 계속증가함 무한히 반복되지 않음 
+    if m == 0: #3-1, 2-1, 1-1,되면 멈추기 때문에 total_lista에는 [[10],[20],[30]]의 형태를 갖추고 for 문아래 temp_list에 영향을 받는다.
+        total_list.append(temp_list[:])
+        return # 재귀함수를 종료하기 위해
+    for a in range(n, len(lista)): #(0,5미만), (0,4미만) 
+        temp_list.append(lista[a])
+        recur(lista,total_list,temp_list,a+1, m-1) # for문안에 for문이면 무한 반복, 매개변수의 개수를 맞춰줘야함, m-1, m=0이되는 순간 total_list에 append
+        temp_list.pop() # return값이 3개인데 위에 append를 하면 temp_list.append에 3개...4개...5개가 append될 수 있기때문에 pop을 써서 하나씩 삭제해야 3개가 유지된다.
+input1 = [10,20,30,40,50]
+total_list = [] # [[10,20,30], [10,20,40].....]
+input2 = 3
+recur(input1, total_list, [],0, input2) # total_list = []이지만 recur문안에 []쓰면 주소값이 고정되지 않아 오류발생
+print(total_list)
+
+35.
+result1 = list(map(int, [1.1, 2.2, 3.3]))
+def func_pow(x):
+    return pow(x, 2) 
+
+36.
+a1 = list(map(int,a.split()))
+print(a1)
+
+37-1
+for i in range(1,11):
+    for j in range(1, i+1):
+        print('*', end="")
+    print()
+
+
+37.
+class Person:
+    def __init__(self, name, age, gender, email): 
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.email = email
+    def register(self): 
+        self.myInfo = self.name + " " + self.age +" " + self.gender +" " + self.email
+# myinfo = plus같은 거 print(p1.myinfo(이름))
+p1 = Person("홍길동", "19", "남", "hong@naver.com")
+p2 = Person("홍길동2", "20", "남", "hong@naver.com")
+p1.register()
+p2.register()
+print(p1.myInfo)
+print(p2.myInfo)
+
+38.
+import module_statements
+print(import_statements.plus(10,20))
+
+import classtatements
+c1 = classtatements.CalculatorChild()
+c1.plus(100)
+print(f"module_import의 result : ", {c1.result})
+
+39.
+예외처리 구문 try except 구문
+while True:
+    # first = int(input("분자를 입력해주세요"))
+    # second = int(input("분모를 입력해주세요"))
+    # 분자를 입력해 주세요 first
+    # 분모를 입력해주세요 second
+    # print(first/second)
+# 사용자가 0으로 숫자를 나누게 되면 division by zero 에러 발생
+# 문제 발생 가능성이 있는 곳에 try
+    try :
+        first = int(input("분자를 입력해주세요")) # try 구문 안에 넣는 이유는 혹시나 모를 오류때문에 
+        second = int(input("분모를 입력해주세요"))
+        print(first/second)
+    # 문제가 발생했을 때 이후의 action except
+    except ZeroDivisionError as zd:
+        print(f"{zd}오류입니다.")
+    except ValueError as ve:
+        print(f"{ve}오류입니다.")
+    except Exception:
+        print(f"{Exception}오류입니다.")    
+    #except 중에 하나가 결러서 오류가뜨고 난뒤에 다시 while문으로    
+    #finally는 문제가 있든 없든 무조건 실행 
+    finally:
+        print("결과를 확인해 주세요")
+# 개발자로서의 기본 문제가 발생할 것 같은 곳은 try, except로 감싸기
+
+# 에러 강제의 예시
+# while True:
+#     raise Exception
+# 부모 클래스에 raise Excpetion(에러 강제)를 통해
+# 자식 클래스로 하여금 overriding(재정의) 유도
+class Bird:
+    def fly(self):
+        raise Exception
+class Eagle(Bird):
+    def fly(self):
+        print("fly fly")
+    pass
+eagle1 = Eagle()
+eagle1.fly()
+
+40.
+f = open("text.txt","r", encoding="UTF-8")
+# readlines : 데이터를 리스트형태로 라인별로담아둔다
+lines = f.readlines()
+for a in lines:
+    print(a[0])
+print(lines)
+# 데이터 파싱하기가 편하다 위 형태가(파싱:가공)
+
+f = open("text.txt","r", encoding="UTF-8")
+# readlines : 데이터를 리스트형태로 라인별로담아둔다
+lines = f.read()
+print(lines)
+
+# a옵션으로 추가모드
+f = open("test.txt", "a", encoding="UTF-8")
+#0~9번쨰 줄입니다 -> 10번째~19번쨰줄입니다.
+for a in range(10,20):
+    data = "%d번째 줄입니다. \n" %a
+    f.write(data)
+f.close()
+
+import os
+# os 라이브러리를 활용한 디렉터리 내에 파일 검색
+# .py로 끝나는 파이썬확장파일을 search
+# 현재 폴더에서만 검색
+# searchDir = r'C:\Users\user\Desktop\오지훈' #\python-basic-syntax
+# 파일, 디렉토리 목록을 뽑아내는 listdir 함수 사용
+# dirList = os.listdir(searchDir)
+# print(dirList)
+# for dir in dirList:
+#     dirTuple = os.path.splitext(dir)
+#     if(dirTuple[1]=='.py'):
+#         fullpath = os.path.join(searchDir, dir)
+#         print(fullpath)
+
+# # 모든 폴더까지 검색
+# searchDir = r'C:\Users\user\Desktop\오지훈'
+# def searchRecur(searchDir): 
+#     dirList = os.listdir(searchDir) #searchDir 목록안에 있는 파일들 꺼내기
+#     for dir in dirList: # searchDir 디렉토리 리스트 목록안에 있는 디렉토리(파일)꺼내기들 꺼내기 
+#         filename = os.path.join(searchDir, dir) # filename = searchDir 목록안에 있는 디렉토리(파일) 경로를 디렉토리 serarchDir 값에 넣기 
+#         if os.path.isdir(filename): # 만약 filename과 isdir의 경로가 같다면  
+#             dirlist2 = os.listdir(filename) #dirlist2 의 경로는 filename경로 값에 listdir 
+#             for dir2 in dirlist2:  # filename경로 값에 listdir 값에 dir2를 넣고
+#                 dirTuple2 = os.path.splitext(dir2) # dirTuple2 = os.path.splitext(dir2) dir2의 값에 경로를 dirTuple2에넣고
+#                 if(dirTuple2[1]=='.py'): #만약 dirTuple2에 뒤에 즉 (파일명)뒤에 확장자가 py의 값을 가지게 되면 
+#                     fullPath = os.path.join(filename, dir2) # fullpath의 경로는filname(상위폴더)에서 dir2(filename의 경로 값)
+#                     print(fullPath) #결국 여기서 가져올 수 있는것은 경로인데 무슨 경로나filname내부에 폴더를 뒤져서 나온 .py파일들을 가져갈 수 있는 것
+#         dirTuple = os.path.splitext(dir)#dir값이 아니면 dirTuple값으로 꺼내기 
+#         if(dirTuple[1]=='.py'):#파일 확장자 명이 py일경우 추가
+#             fullPath = os.path.join(searchDir, dir)#위와 같은 경로 추가 searchDir값에
+#             print(fullPath) #py확장자를 가지고 있는 searchDir 값에 fullPath 리스트 안에 넣기
+# #알아 내고자하는 것 : 내 파일 경로 안에 py확장자를 쓰는 것의 경로 
+# # 상위폴더랑 내에는 py파일명확장자가 없기때문에 하위폴더를 검색하고 그안에서 py값을 찾아내서 그 경로를 업데이트 시켜야 한다.
+# # 모든 폴더까지검색 
+
+
+def searchRecur(searchDir):
+    try: 
+        dirList = os.listdir(searchDir)
+        if not dirList: #dirList에 파일이 없으면 종료 
+            return
+        for dir in dirList: 
+            filename = os.path.join(searchDir, dir)#dir폴더명을 다시 찾기 
+            if os.path.isdir(filename): 
+                searchRecur(filename) 
+            dirTuple = os.path.splitext(dir)
+            if(dirTuple[1]=='.py'):
+                fullPath = os.path.join(searchDir, dir)#위와 같은 경로 추가 searchDir값에
+                print(fullPath) #py확장자를 가지고 있는 searchDir 값에 fullPath 리스트 안에 넣기
+    except Exception:
+        print("예외입니다")
+searchDir = r'C:\Users\user\Desktop\오지훈' #재귀함수를 만들때 가장 중요한건 비슷한 것들 묶기
+searchRecur(searchDir)
+
+41.
+
+# 코인 시세정보 API, url
+import json #**********************************************굉장히 중요
+# 실제 업무에서  date를 주고받는 경우 json형식으로 주고 받는다 
+url = "https://api.binance.com/api/v3/ticker/24hr"
+response = requests.get(url)
+data_json = json.loads(response.text)
+print(data_json)
+
+# 출력 결과가 
+# ********************************************************굉장히 중요
+# lastPrice : xxxx(가격)
+# Key는 "symbol" if ~~ == "BTCUSDT", lastPrice를 key로 값을
+# key값 value값 뽑아내기
+# dict.keys(), dict.values() 
+for a in data_json:
+    if a['symbol'] == "BTCUSDT":
+        print(f"{a['symbol']}코인의 price는 {a['lastPrice']}입니다.")
+
+
+# # csv파일 parsing
+# import seaborn
+# from matplotlib import pyplot
+# import pandas
+
+# file_path = r'C:\Users\user\Desktop\오지훈\tips.csv'
+# csv_date = pandas.read_csv(file_path)
+# # print(csv_date)
+
+# # 성별에 따라 tip이 어떻게 달라지는 지
+# # agg : 집계함수, mean:평균, std:표준편차
+# tip_by_gender = csv_date.groupby('gender')['tip'].agg(['mean', 'std']).reset_index()
+# # tip_by_day = csv_date.groupby('day')['tip'].agg(['mean', 'std']).reset_index()
+
+# seaborn.barplot(x='gender', y='mean', data=tip_by_gender, yerr=tip_by_gender['mean'], capsize = 0.1)
+# seaborn.despine() # 테두리 없애주는 함수
+# pyplot.title('average tip per gender')
+# pyplot.xlabel("gender")
+# pyplot.ylabel("average tip")
+# pyplot.show()
+
+# 코인시세 10초에 한번씩 db insert
+# import time
+# import json
+# import requests
+# import mysql.connector
+# while True:
+#     url = "https://api.binance.com/api/v3/ticker/24hr"
+#     response = requests.get(url)
+#     data_json = json.loads(response.text)
+#     for a in data_json:
+#         if a['symbol'] == "BTCUSDT":
+#             try:
+#                 connector = mysql.connector.connect(host="localhost", port="3406", user="root", password="1234", database="practice")
+#                 cursor = connector.cursor()
+#             except mysql.connector.Error as err:
+#                 print(err)
+#             add_data = "INSERT INTO coin_price (coin_name, last_price) VALUES(%s, %s)"
+#             data = ("BTCUSDT", a['lastPrice'])
+#             try:
+#                 cursor.execute(add_data, data)
+#                 connector.commit()
+#             except mysql.connector.Error as err:
+#                 print(err)
+#             cursor.close()
+#             connector.close()
+#     time.sleep(10)
+
+42.
+json 예제 
+import json
+ 
+# 테스트용 Python Dictionary
+customer = {
+    'id': 152352,
+    'name': '강진수',
+    'history': [
+        {'date': '2015-03-11', 'item': 'iPhone'},
+        {'date': '2016-02-23', 'item': 'Monitor'},
+    ]
+}
+ 
+# JSON 인코딩
+jsonString = json.dumps(customer)
+ 
+# 문자열 출력
+print(jsonString)
+print(type(jsonString))   # class str
+jsonString = json.dumps(customer, indent=4)
+print(jsonString)
+{
+    "history": [
+        {
+            "date": "2015-03-11",
+            "item": "iPhone"
+        },
+        {
+            "date": "2016-02-23",
+            "item": "Monitor"
+        }
+    ],
+    "id": 152352,
+    "name": "\uac15\uc9c4\uc218"
+}
+import json
+ 
+# 테스트용 JSON 문자열
+jsonString = '{"name": "강진수", "id": 152352, "history": [{"date": "2015-03-11", "item": "iPhone"}, {"date": "2016-02-23", "item": "Monitor"}]}'
+ 
+# JSON 디코딩
+dict = json.loads(jsonString)
+ 
+# Dictionary 데이타 체크
+print(dict['name'])
+for h in dict['history']:
+    print(h['date'], h['item'])
+
+
+43. (https://www.daleseo.com/python-json/)
+import json
+
+json_object = {
+    "id": 1,
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+    },
+    "admin": False,
+    "hobbies": None
+}
+
+json_string = json.dumps(json_object)
+print(json_string)
+
+import json
+
+json_object = {""" 위와 동일 """}
+
+json_string = json.dumps(json_object, indent=2)
+print(json_string)
+
+import json
+
+with open('input.json') as f:
+    json_object = json.load(f)
+
+assert json_object['id'] == 1
+assert json_object['email'] == 'Sincere@april.biz'
+assert json_object['address']['zipcode'] == '92998-3874'
+assert json_object['admin'] is False
+assert json_object['hobbies'] is None
+
+import json
+
+json_object = {
+    "id": 1,
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+    },
+    "admin": False,
+    "hobbies": None
+}
+
+with open('output.json', 'w') as f:
+    json.dump(json_object, f, indent=2)
+
+44.
+재귀 함수
+재귀 함수(Recursive Function)란 자기 자신을 다시 호출하는 함수를 의미한다
+
+단순한 형태의 재귀 함수 예제
+
+'재귀 함수를 호출합니다'라는 문자열을 무한히 출력한다
+어느정도 출력하다가 최대 재귀 깊이 초과 메세지가 출력된다
+def recursive_function():
+    print('재귀 함수를 호출합니다')
+    recursive_function()
+
+recursive_function()
+재귀 함수의 종료 조건
+재귀 함수를 문제 풀이에서 사용할 때는 재귀 함수의 종료 조건을 반드시 명시해야 합니다
+
+종료 조건을 제대로 명시하지 않으면 함수가 무한히 호출될 수 있다
+
+종료 조건을 포함한 재귀 함수 예제
+def recursive_function(i):
+    # 100번째 호출을 했을 때 종료되도록 종료 조건 명시
+    if i== 100:
+        return
+    print(i, '번째 재귀함수에서', i + 1, '번째 재귀함수를 호출합니다')
+    recursive_function(i + 1)
+    print(i, '번째 재귀함수를 종료합니다')
+
+recursive_function(1)
+팩토리얼 구현 예제
+𝑛! = 1 × 2 × 3 × ・・・ × (𝑛 - 1) × 𝑛
+수학적으로 0!과 1!의 값은 1이다
+# 반복적으로 구현한 n!
+def factorial_iterative(n):        
+    result = 1
+    # 1부터 n까지의 수를 차례대로 곱하기
+    for i in range(1, n + 1):
+       result *= i
+    return result
+
+# 재귀적으로 구현한 n!
+def factorial_recursive(n):        
+    if n <= 1: # n이 1 이하인 경우 1을 반환
+        return 1
+    # n! = n * (n - 1)!를 그대로 코드로 작성하기
+    return n * factorial_recursive(n - 1)
+
+# 각각의 방식으로 구현한 n! 출력(n = 5)
+print('반복적으로 구현:', factorial_iterative(5))
+print('재귀적으로 구현:', factorial_recursive(5))
+
+45.
+체 지향 프로그래밍 살펴보기
+코드의 중복 사용이 최소화되서 재사용성이 증가
+클래스의 매직 메소드를 사용할 수 있음
+네임스페이스
+프로그래밍 언어에서 객체를 구분할 수 있는 공간
+변수를 객체에 할당하면, 해당 객체는 딕셔너리 형태로 연결되서 네임스페이스에 저장됨
+파이썬의 클래스는 새로운 타입(객체)을 정의하기 위해 사용되고, 모듈과 마찬가지로 하나의 네임스페이스를 가짐
+globals()를 사용하면 전역 네임스페이스를 확인할 수 있음
+함수는 전역과 별개의 네임스페이스를 가짐
+  temp_variable = a
+  print(globals()) 
+__init__ : 클래스 인스턴스 생성시 초기화하며 실행되는 부분
+class의 값을 보고 싶으면 __dict__을 사용
+python class magic method - str
+__str__ 매직 메소드가 구현되어 있지 않은 상태에서 인스턴스를 print하면 object가 나옴
+print() 또는 str() 함수가 호출될 때 사용 - 기본적으로 str 메소드가 먼저 실행되며, str 메소드가 없으면 repr 메소드를 실행함
+python class magic method - repr
+__repr__ : str과 비슷
+개발, 엔지니어 레벨에서 객체의 엄격한 타입을 표현시 사용
+객체 표현을 반환함
+repr() 함수가 호출될 때 사용
+python class magic method - dir
+해당 인스턴스가 가진 모든 attribute를 list 형태로 보여줌(값을 보여주진 않음)
+python class magic method - dict
+__dict__
+특정 네임스페이스만 보고 싶다면, __dict__를 사용한 후, 특정 네임스페이스에 접근하면 됨
+python class magic method - doc
+__doc__
+docstring을 출력
+class Smartphone:
+	"""
+	Smartphone class
+	"""
+    def __init__(self, brand, informations):
+        self._brand = brand
+        self._informations = informations
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._informations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._informations}'
+    
+
+Smartphone1 = Smartphone('Iphone', {'color' : 'White', 'price': 10000})
+Smartphone2 = Smartphone('Galaxy', {'color' : 'Black', 'price': 8000})
+
+print(Smartphone1)
+print(Smartphone1.__dict__)
+
+print(Smartphone1._brand == Smartphone2._brand)
+print(Smartphone1 is Smartphone2)
+
+print(Smartphone.__doc__)    
+self란?
+self는 인스턴스 자기 자신을 뜻함
+인스턴스 : 클래스에 의해 만들어진 객체
+self가 있는 것이 인스턴스 변수
+인자에 self를 받는 것은 인스턴스 메소드 : get_information 함수
+인스턴스의 __class__는 사용된 클래스를 출력함
+class Smartphone:
+    """
+    Smartphone Class
+    """
+
+    def __init__(self, brand, details):
+        self._brand = brand
+        self._infomations = infomations
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._ infomations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._ infomations}'
+
+    def get_infomation(self):
+        print(f'Current Id : {id(self)}')
+        print(f'Smartphone Detail Info : {self._brand} {self._infomations.get("price")}')
+
+        Smartphone1 = Smartphone('Iphone', {'color': 'White', 'price': 10000})
+        Smartphone2 = Smartphone('Galaxy', {'color': 'Black', 'price': 8000})
+        
+        Smartphone1.detail_info()
+
+        print(Smartphone1.__class__, Smartphone2.__class__)
+        # 부모는 같음
+        print(id(Smartphone1.__class__) == id(Smartphone2.__class__))
+클래스 변수
+클래스 내부에 선언된 변수
+클래스 변수는 클래스의 네임스페이스에 위치함
+모든 인스턴스가 공유하는 변수
+Smartphone1.__dict__를 출력하면 클래스 변수는 보이지 않음
+dir(Smartphone1)를 출력할 때는 클래스 변수가 보임
+인스턴스 변수
+self.name 같이 self가 붙은 변수
+인스턴스 변수는 인스턴스의 네임스페이스에 위치함
+인스턴스 네임스페이스에서 없으면 상위에서 검색
+즉, 동일한 이름으로 변수 생성 가능(인스턴스 검색 후 => 상위 클래스, 부모 클래스 변수)
+class Smartphone:
+    """
+    Smartphone Class
+    """
+    # 클래스 변수
+    smartphone_count = 0
+    
+    def __init__(self, brand, infomations):
+        self._brand = brand
+        self._infomations = infomations
+        Smartphone.smartphone_count += 1
+
+    def __str__(self):
+        return f'str : {self._brand} - {self._infomations}'
+
+    def __repr__(self):
+        return f'repr : {self._brand} - {self._infomations}'
+
+    def infomation(self):
+        print(f'Current Id : {id(self)}')
+        print(f'Smartphone Detail Info : {self._brand} {self._infomations.get('price'))}'
+
+    def __del__(self):
+        Smartphone.smartphone_count -= 1
+    
+Smartphone1 = Smartphone('Iphone', {'color' : 'White', 'price': 10000})
+Smartphone2 = Smartphone('Galaxy', {'color' : 'Black', 'price': 8000})
+	
+	
+print(Smartphone.__dict__)
+print(Smartphone1.__dict__)
+print(Smartphone2.__dict__)
+print(dir(Smartphone1))
+	
+print(Smartphone1.smartphone_count)
+print(Smartphone.smartphone_count)

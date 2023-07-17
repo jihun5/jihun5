@@ -1,0 +1,13 @@
+Bitcoin 가격 -> json자름 - > print() -> database insert
+스키마 생성
+database생성, table 생성(id, coin_name, last_price, created_time)
+
+create database practice;
+use practice;
+create table coin_price(컬렴명1 컬럼타입, 컬럼명2 컬럼타입....);
+id(pk, auto), coin_name(varchar 20), last_price varchar(100), 
+created_date datetime DEFAULT CURRNT_TIMESTAMP PRIMARY KEY(id)):
+
+last price 값에 파이썬 코드 넣고
+coin 네임에 
+
